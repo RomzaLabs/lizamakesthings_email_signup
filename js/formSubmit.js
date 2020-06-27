@@ -24,7 +24,18 @@ $(document).ready(function () {
       url: url,
       method: "GET",
       dataType: "json",
-      data: form.serializeObject()
-    }).success();
+      data: form.serializeObject(),
+      beforeSend: () => {
+        $('#loading').toggleClass('d-none');
+      },
+      success: () => {
+        $('#loading').toggleClass('d-none');
+        window.location.replace("success.html");
+      },
+      error: () => {
+        console.error('error!');
+        $('#loading').toggleClass('d-none');
+      }
+    });
   });
 });
