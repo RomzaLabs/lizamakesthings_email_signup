@@ -30,6 +30,7 @@ $(document).ready(function () {
       },
       success: () => {
         $('#loading').toggleClass('d-none');
+        window.location.replace("success.html");
       },
       error: () => {
         console.error('error!');
