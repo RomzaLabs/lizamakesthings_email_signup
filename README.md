@@ -1,6 +1,6 @@
 # lizamakesthings_email_signup
 
-Version: 1.0.1 - 27 Jun 2020
+Version: 1.0.2 - 28 Jun 2020
 
 ## Description
 
